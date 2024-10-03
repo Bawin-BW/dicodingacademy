@@ -9,12 +9,12 @@ def create_product_sell_df(df):
     product_sell_df = df.groupby('product_category_name_english')['customer_id'].nunique().reset_index().sort_values(by='customer_id', ascending=False)
     return product_sell_df
 
-accepted_time = pd.read_csv("../data/accepted_time.csv")
-delivery_time = pd.read_csv("../data/delivery_time.csv")
-geolocation_lat = pd.read_csv("../data/geolocation_lat.csv")
-geolocation_lng = pd.read_csv("../data/geolocation_lng.csv")
-order_payments_dataset = pd.read_csv("../data/order_payments_dataset.csv")
-product_sell = pd.read_csv("../data/product_sell.csv")
+accepted_time = pd.read_csv("./data/accepted_time.csv")
+delivery_time = pd.read_csv("./data/delivery_time.csv")
+geolocation_lat = pd.read_csv("./data/geolocation_lat.csv")
+geolocation_lng = pd.read_csv("./data/geolocation_lng.csv")
+order_payments_dataset = pd.read_csv("./data/order_payments_dataset.csv")
+product_sell = pd.read_csv("./data/product_sell.csv")
 
 st.header('Garuda Toserba :sparkles:')
 
@@ -22,7 +22,7 @@ with st.sidebar:
 
     st.title("Bagas Winerang")
     
-    st.image("../data/toko.png")\
+    st.image("./data/toko.png")\
 
 
 ##### Sales Analysis #####
@@ -111,8 +111,8 @@ st.pyplot(plt)
 st.header('Distribution of Geolocation of Sellers and Customers in São Paulo')
 
 # Load geolocation data from CSV files
-geolocation_lat = pd.read_csv("../data/geolocation_lat.csv")
-geolocation_lng = pd.read_csv("../data/geolocation_lng.csv")
+geolocation_lat = pd.read_csv("./data/geolocation_lat.csv")
+geolocation_lng = pd.read_csv("./data/geolocation_lng.csv")
 
 latitudes = geolocation_lat['geolocation_lat']  # Replace 'latitude' with your actual column name
 longitudes = geolocation_lng['geolocation_lng']  # Replace 'longitude' with your actual column name
