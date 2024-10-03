@@ -1,7 +1,12 @@
-# Geolocation Dashboard
+# Dicoding Collection Dashboard
 
 ## Overview
-This project visualizes the geolocation distribution of sellers and customers in São Paulo using Streamlit.
+This project focuses on exploring and visualizing data from the **E-Commerce Public Dataset**. It leverages Streamlit to create interactive visualizations that provide insights into various aspects of Brazilian e-commerce, including the geolocation distribution of sellers and customers in São Paulo. The goal is to analyze the dataset comprehensively, highlighting trends, patterns, and key metrics within the e-commerce landscape.
+
+## Data Source
+The data used in this project comes from the following source:
+
+- [E-Commerce Public Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
 ## Requirements
 To run this project, you need to install the following Python packages:
