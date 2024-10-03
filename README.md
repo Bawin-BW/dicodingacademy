@@ -28,17 +28,17 @@ First, clone the repository:
 git clone https://github.com/Bawin-BW/dicodingacademy.git
 cd dicodingacademy
 
-# Create a virtual environment
+## Create a virtual environment
 python -m venv venv
 
-# Activate the virtual environment
-# On Windows
+## Activate the virtual environment
+### On Windows
 venv\Scripts\activate
-# On macOS/Linux
+### On macOS/Linux
 source venv/bin/activate
 
 ## Install Dependencies
-# Install the required packages:
+### Install the required packages:
 
 pip install -r requirements.txt
 
@@ -52,6 +52,6 @@ customers_lng.csv
 Adjust the file paths in dashboard.py if necessary.
 
 ## Running the Dashboard
-# Run the Streamlit application:
+### Run the Streamlit application:
 
 streamlit run dashboard.py
