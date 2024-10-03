@@ -9,7 +9,7 @@ def create_product_sell_df(df):
     product_sell_df = df.groupby('product_category_name_english')['customer_id'].nunique().reset_index().sort_values(by='customer_id', ascending=False)
     return product_sell_df
 
-accepted_time = pd.read_csv("./data/accepted_time.csv")
+accepted_time = pd.read_csv("../data/accepted_time.csv")
 delivery_time = pd.read_csv("./data/delivery_time.csv")
 geolocation_lat = pd.read_csv("./data/geolocation_lat.csv")
 geolocation_lng = pd.read_csv("./data/geolocation_lng.csv")
