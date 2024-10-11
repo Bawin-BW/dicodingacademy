@@ -10,8 +10,8 @@ def create_product_sell_df(df):
     return product_sell_df
 
 accepted_time = pd.read_csv("../data/accepted_time.csv")
-delivery_time = pd.read_csv("./data/delivery_time.csv")
-geolocation_lat = pd.read_csv("./data/geolocation_lat.csv")
+delivery_time = pd.read_csv("../data/delivery_time.csv")
+geolocation_lat = pd.read_csv("../data/geolocation_lat.csv")
 geolocation_lng = pd.read_csv("./data/geolocation_lng.csv")
 order_payments_dataset = pd.read_csv("./data/order_payments_dataset.csv")
 product_sell = pd.read_csv("./data/product_sell.csv")
